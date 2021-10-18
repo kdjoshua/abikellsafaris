@@ -42,38 +42,29 @@
         <!--Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo me-auto me-lg-0"><img style="border-radius: 50px;" src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav style="text-align: center;" id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="#">Home</a></li>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#estates">Estates</a></li>
-          <li><a class="nav-link scrollto " href="#electronics">Electronics and Appliances</a></li>
-          <li><a class="nav-link scrollto" href="#automobiles">Automobiles</a>
-          </li><li><a class="nav-link scrollto" href="#events">Events and Advertisements
-</a></li>
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a class="nav-link scrollto" href="#estates">Estates</a></li>
+              <li><a class="nav-link scrollto " href="#electronics">Electronics and Appliances</a></li>
+              <li><a class="nav-link scrollto" href="#automobiles">Automobiles</a></li>
+              <li class="dropdown"><a href="#"><span>Upcoming</span> <i class="bi bi-chevron-down"></i></a>
+              	<ul>
+             <li><a class="nav-link scrollto" href="#events">Events and Advertisements
+</a>
+         <li><a class="nav-link scrollto" href="#events">Tourism and Culture
+</a></ul>         
             </ul>
-          </li>-->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </li>
+          <li><a  class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav><!-- .navbar --></center>
+         <a  href="#about" class="get-started-btn scrollto">Get Started</a> 
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
 
     </div>
   </header><!-- End Header -->
@@ -85,73 +76,91 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
           <h1 style="color:white !important;">MOHAN</h1>
-          <h2 style="color:white !important;">Financial and Property Dealers Ltd.</h2>
+          <h2 style="color:white !important;padding-bottom: 10px ! important;">Financial and Property Dealers Ltd.</h2>
         </div>
       </div>
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line"></i>
-            <h3><a href="">Estates</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Automobiles</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Financial Services</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Electronics and Appliances</a></h3>
-          </div>
-        </div>
-        <!--<div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="">Nemos Enimade</a></h3>
-          </div>
-        </div>-->
-      </div>
+        <div style="width: 100%; padding-top: -1000px;" class="col-xl-2 col-md-4">
+          <div style="padding-bottom: 100px;padding-top: -60px;" id="typedtext" ></div><br>
+            <style type="text/css">
+                font-family: {'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+}
+            </style>
+           <script type="text/javascript">// set up text to print, each item in array is new line
+var aText = new Array(
+"We are a privately owned and locally registered company positioned to evaluate the actual market value", 
+" of the propety that you are interested in, house, shop,land or any other property that you wish to buy or sell."
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
 
-    </div>
+
+typewriter();</script>
+
+</h1>
+
+</div>
+</div>
+</div>
+
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section style="background-color: White ! important;" id="about" class="about">
       <div class="container" data-aos="fade-up">
       	<div class="section-title">
-          <center><p>About Us</p></center>
+          <center><p style="color:#008b8b ! important;">About Us</p></center>
         </div>
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>Mohan Financial and Property Dealers Limited.</h3>
-            <p>
-              Mohan Financial and Property Dealers Limited is a privately owned and locally registered company. 
-
- <h3>Mission Statement.</h3>
- <p>Strives to be the best in providing and honouring value for our customers by providing reliable financial, property deals and management to organizations and individual customers.</p>
-
- <h3>Vision Statement.</h3>
- <p>Commits to being the number one online and phyisical marketing provider of the most desireble finacial, properties and product deals particularly in Uganda and the region as a whole.</p>
-            </p>
-            <h3>Meet The Founder.</h3>
+             <h3 style="color:#008b8b ! important;">Meet The Founder.</h3>
              <p>
               Mr. Asiimwe W. Hanning Is the motivated managing director of MOHAN financial and property dealers limited with over 10 years of experience in procurement,planning and marketing for both startup and big organizations with a proven record of implementing organizational processes and procedures.
+            </p>
+ <h3 style="color:#008b8b ! important;">Mission Statement.</h3>
+ <p>Strives to be the best in providing and honouring value for our customers by providing reliable financial, property deals and management to organizations and individual customers.</p>
+
+ <h3 style="color:#008b8b ! important;">Vision Statement.</h3>
+ <p>Commits to being the number one online and phyisical marketing provider of the most desireble finacial, properties and product deals particularly in Uganda and the region as a whole.</p>
             </p>
           </div>
         </div>
@@ -703,7 +712,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p><a href="tel:+256 782 784 027">+256 782 784 027<br> OR <br> </a>
+                <p><a href="tel:+256 782 784 027">+256 782 784 027 <br> </a>
                 <a href="tel:+256 708 584 336">+256 708 584 336</a></p>
               </div>
 
@@ -713,7 +722,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://formsubmit.co/oloyakennedy7@gmail.com" method="POST" role="form" class="php-email-form">
+            <form action="https://formsubmit.co/ugreatdeals@gmail.com" method="POST" role="form" class="knd" >
               <div class="row">
                 <div class="col-md-6 form-group">
                 	<label><p>Your Name</p></label>
@@ -731,12 +740,7 @@
               <div class="form-group mt-3">
               	<label><p>Message</p></label>
                 <textarea style="background-color:  #008b8b;" class="form-control" name="message" rows="5" placeholder="" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div><br>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
@@ -772,15 +776,11 @@
       </div>
     </div>
 
-    <div class="container">
-      <div style="float: left;" class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://kdjoshua.github.io/KnD/">KnDjoshua</a>
+    <div class="container-fluid">
+      <div style="float: left;padding-left: 0px;" class="credits"> 
+        Designed by <a href="">KnDjoshua</a>
       </div>
-    </div>
+    </div></div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
